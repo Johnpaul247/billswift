@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>BillSwift</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header class="bg-blue-600 md:h-[600px] pt-4">
+
+    <!-- NAVBAR FOR DESKTOP -->
+     <nav class="bg-white py-[12px]  px-[30px] mx-[80px] flex justify-between rounded-[40px] text-blue-600 items-center max-md:hidden">
+
+      <a href="Index.html"><img class="w-[50px]" src="Img/IMG_E1016.JPG" alt=""></a>
+
+      <ul class="flex gap-6">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="FAQs.html">FAQs</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+
+      <button class="p-2 border border-blue-600 rounded-lg">Login <i class="fa fa-user"></i></button>
+
+     </nav>
+
+     <!-- NAVBAR FOR MOBILE -->
+      <nav class="flex justify-between rounded-[40px] text-blue-600 items-center bg-white py-[12px] px-[30px] mx-[30px] md:hidden">
+
+        <a href="Index.html"><img class="w-[50px]" src="Img/IMG_E1016.JPG" alt=""></a>
+        <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl"></i></button>
+
+      </nav>
+
+      <!-- SIDEBAR FOR MOBILE -->
+      <div id="menu" class="fixed top-0 right-0 h-[100vh] w-full p-4 transform translate-x-full transition-transform duration-300 md:hidden z-50 bg-blue-600 text-white">
+        <button onclick="toggleMenu()" class="absolute top-4 right-4 text-3xl font-semibold">&times;</button>
+        <ul class="flex flex-col gap-4 mt-10">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Service.html">Serices</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+
+     <!-- HERO SECTION -->
+      <main class="md:px-[130px] py-10 text-white">
+
+        <div class="flex justify-between gap-6 max-md:flex-col">
+
+          <div class="flex flex-col gap-4 mt-16">
+            <h1 class="font-bold text-5xl max-md:text-center">Welcome to BillSwift</h1>
+            <h2 class="text-center">Your Gateway to Seamless Digital Payments</h2>
+            <p class="font-semibold text-xl text-center">Fast, Reliable, and Secure Top-Ups for All Networks.</p>
+            <div class="flex justify-center gap-8">
+              <button class="p-2 border border-white rounded-lg">Sign Up <i class="fa fa-user-plus"></i></button>
+              <button class="p-2 border border-white rounded-lg">Login <i class="fa fa-user"></i></button>
+            </div>
+          </div>
+
+          <div class="max-md:px-4">
+            <img class="w-[450px] rounded-full" src="Img/IMG_1045.JPG" alt="">
+          </div>
+
+        </div>
+
+      </main>
+
+   </header>
+
+   
+  <!-- FEATURE SECTION -->
+   <section class="md:px-[110px] py-16 max-md:px-4">
+
+    <div class="grid grid-cols-4 gap-4 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-2 shadow text-center border border-blue-600 p-2 rounded-lg">
+        <i class="fa fa-bolt text-blue-600 text-5xl items-center"></i>
+        <h1 class="font-bold text-2xl">Fast Transaction</h1>
+        <p>Experience instant delivery every time you recharge or pay bills. No delays, no stress, your transactions are proceesed in seconds!</p>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow text-center border border-blue-600 p-2 rounded-lg">
+        <i class="fa fa-shield-alt text-blue-600 text-5xl items-center"></i>
+        <h1 class="font-bold text-2xl">Secure Payments</h1>
+        <p>Your security is our priority. BillSwift uses advanced encryption and trusted payment gateways to keep your transactions safe and secure.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow text-center border border-blue-600 p-2 rounded-lg">
+        <i class="fa fa-tags text-blue-600 text-5xl items-center"></i>
+        <h1 class="font-bold text-2xl">Affordable Pricing</h1>
+        <p>Enjoy unbeatable rates on airtime,data, and bilss. With BillSwift, you save money while staying connected.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow text-center border border-blue-600 p-2 rounded-lg">
+        <i class="fa fa-headset text-blue-600 text-5xl items-center"></i>
+        <h1 class="font-bold text-2xl">24/7 Support</h1>
+        <p>Have questions or need help? Our friendly customer support team is available around the clock to assist you anytime, anywhere.</p>
+      </div>
+
+    </div>
+
+   </section>
+
+
+
+
+   <!-- ABOUT BILLSWIFT -->
+   <section class="md:px-[110px] pb-16 max-md:px-4">
+
+    <h1 class="font-bold text-blue-600 text-3xl text-center">About BillSwift</h1>
+    <p class="text-center text-xl">Empowering Seamless Transactions</p>
+
+    <div class="flex gap-24 mt-8 max-md:flex-col">
+
+      <div class="flex gap-4">
+        <img class="w-[550px] rounded-tl-[40px] rounded-br-[40px]" src="Img/IMG_1035.JPG" alt="">
+      </div>
+
+      <div class="flex flex-col">
+        <p class="max-w-[450px]">At BillSwift, we're revolutionizing the way you access essential services like airtime, data bundles, cable TV subscriptions, electricity bill payments, and more. Our platform is built with convenience, speed, and affordability in mind, ensuring that you stay connected without breaking the bank.</p>
+       <ul class="flex flex-col gap-2 mt-4">
+         <h1><i class="fa fa-check-circle text-blue-600 text-xl"></i> Ease of use</h1>         
+         <h1><i class="fa fa-check-circle text-blue-600 text-xl"></i> Affordable Rates</h1>         
+         <h1><i class="fa fa-check-circle text-blue-600 text-xl"></i> Instant Transactions</h1>         
+         <h1><i class="fa fa-check-circle text-blue-600 text-xl"></i> Secure Payments</h1>         
+       </ul>
+       <button class="mt-4 bg-blue-600 p-2 rounded-lg text-white">Get Started!</button>
+      </div>
+
+    </div>
+
+   </section>
+
+
+
+   <!-- SERVICE SECTION -->
+  <section class="md:px-[110px] pb-16 max-md:px-4">
+
+    <h1 class="text-center text-3xl font-bold text-blue-600">Our Services</h1>
+    <p class="text-center">We provide a wide range of digital services to keep you connected, informed, and empowered.</p>
+
+    <div class="grid grid-cols-4 gap-x-6 gap-y-16 mt-8 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-phone-alt text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Airtime Top up</h1>
+        <p>Enjoy quick top-ups for all major networks in just seconds.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-wifi text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Data Bundles</h1>
+        <p>Affordable and reliable data plans tailored for your needs, no matter the network.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-tv text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Cable TV Subscription</h1>
+        <p>Seamlessly renew your DStv, GOtv, or Startimes packages without delays.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-lightbulb text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Electricity Bills</h1>
+        <p>Make secure and instant payments for your electricity needs from the comfort of your home.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-sms text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Bulk SMS</h1>
+        <p>Send promotional, transactional, or personal messages to multiple recipients at once. It's affordable, fast, and reliable.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-gift text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Gift Cards</h1>
+        <p>Purchase and redeem gift cards for platforms like Amazon, Netflix, and more. Enjoy secure and instant delivery.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-wallet text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Funding Bet Wallets</h1>
+        <p>Easily fund your betting wallets for platforms like Bet9ja, 1xBet, and others. Instant processing for uninterrupted gaming.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 text-center shadow-lg p-2">
+        <i class="fa fa-ticket text-blue-600 text-4xl"></i>
+        <h1 class="font-semibold text-2xl">Event Ticketing</h1>
+        <p>Buy tickets for concerts, movies, sports, and other events directly from the platform. Enjoy convenience and instant confirmation.</p>
+      </div>
+
+    </div>
+
+    <img class="mt-16" src="Img/providers.png" alt="">
+
+  </section>
+
+
+  <!-- STEPS SECTION -->
+   <section class="md:px-[110px] pb-16 max-md:px-4">
+
+    <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-4">
+        <h1 class="font-bold text-3xl">3 Simple Steps to Enjoy
+         <span class="text-blue-600">BILLSWIFT</span>.</h1>
+         <div class="flex gap-4 items-center">
+          <button class="px-4 py-2 rounded-full border border-blue-600 font-bold text-xl text-blue-600">1</button>
+          <h2 class="font-semibold text-xl">Visit our website</h2>
+         </div>
+
+         <div class="flex gap-4 items-center ">
+          <button class="px-4 py-2 rounded-full border border-blue-600 font-bold text-xl text-blue-600">2</button>
+          <h2 class="font-semibold text-xl">Create an account</h2>
+         </div>
+
+         <div class="flex gap-4 items-center ">
+          <button class="px-4 py-2 rounded-full border border-blue-600 font-bold text-xl text-blue-600">3</button>
+          <h2 class="font-semibold text-xl">Fund your account</h2>
+         </div>
+
+         <p class="text-xl">Create an account to start enjoying seamless services at your fingertips.</p>
+
+         <button class="bg-blue-600 rounded-lg p-2 text-white">Register Now! <i class="fa fa-arrow-right"></i></button>
+      </div>
+
+      <img class="rounded-tr-[40px] rounded-bl-[40px]" src="Img/IMG_E1014.JPG" alt="">
+
+    </div>
+
+   </section>
+
+
+
+   <!-- TESTIMONIALS -->
+  <section class="md:px-[110px] pb-16 max-md:px-4">
+
+    <h1 class="text-center font-bold text-3xl text-blue-600">Testimonials from happy clients</h1>
+    <p class="text-center text-xl">See why BillSwift is the preferred choice for hassle-free transactions.</p>
+
+    <div class="grid grid-cols-2 gap-6 mt-8 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-4 p-2 shadow-lg">
+        <img class="w-[70px]" src="Img/qoutess.png" alt="">
+        <p class="p-2">I love how fast and secure BillSwift is! The platform is easy to use, and I can always trust that my payments will go through without a hitch.</p>
+
+        <div class="flex justify-between items-center">
+
+          <div class="flex gap-2 items-center">
+            <img class="w-[70px] rounded-full" src="Img/IMG_E1016.JPG" alt="">
+            <h2>Maxwell Johnpaul</h2>
+          </div>
+
+          <div class="flex">
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star-half text-orange-700"></i>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 p-2 shadow-lg">
+        <img class="w-[70px]" src="Img/qoutess.png" alt="">
+        <p class="p-2">As a reseller, BillSwift has been a game-changer. I can easily bulk purchase airtime and data, and the process is so smooth.</p>
+
+        <div class="flex justify-between items-center">
+
+          <div class="flex gap-2 items-center">
+            <img class="w-[70px] rounded-full" src="Img/IMG_E1016.JPG" alt="">
+            <h2>Treasure Simplicity</h2>
+          </div>
+
+          <div class="flex">
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star text-orange-700"></i>
+            <i class="fa fa-star-half text-orange-700"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- MESSAGE US -->
+   <section class="md:px-[110px] pb-16 max-md:px-4">
+
+    <div class="grid grid-cols-2 max-md:grid-cols-1">
+
+      <div class="bg-blue-600 text-center items-center align-center flex flex-col justify-center gap-2 rounded-l-lg max-md:py-32 max-md:p-2">
+        <h1 class="font-bold text-white text-3xl">Have anything to say to us?</h1>
+        <button class="p-2 text-white border border-white rounded-lg">Contact Us <i class="fa fa-arrow-right"></i></button>
+      </div>
+
+      <img class="rounded-r-lg" src="Img/IMG_1040.JPG" alt="">
+
+    </div>
+
+   </section>
+
+
+
+   <!-- FOOTER -->
+    <footer class="bg-blue-600 md:px-[110px] py-16 rounded-t-[50px] max-md:pr-4 pl-12">
+
+      <div class="flex justify-between gap-12 max-md:flex-col">
+
+        <div class="text-white text-lg max-w-[400px]">
+          <p>BillSwift is your go-to platform for fast, secure, and affordable digital transactions. From airtime top-ups to bill payments, we're here to simplify your financial life.</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Quick Links</h1>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Customer Support</h1>
+          <p><i class="fa fa-envelope"></i> support@billswift.com</p>
+          <p><i class="fa fa-phone-alt"></i> +234 814 442 6428</p>
+          <p><i class="fa fa-home"></i> NO. 5 Tetlow, Owerri.</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Stay connected with us</h1>
+          <ul class="flex gap-2">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-whatsapp"></i>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="text-center mt-16 text-white  border-yl">
+        <h1> &copy; 2024, BillSwift. All rights reserved.</h1>
+      </div>
+
+    </footer>
+
+  
+
+  <script src="Script.js"></script>
+</body>
+</html>

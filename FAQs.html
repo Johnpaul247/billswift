@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>FAQs</title>
+</head>
+<body>
+
+ <!-- HEADER -->
+<header class="bg-blue-600 md:h-[300px] pt-4">
+
+  <nav class="bg-white py-[12px]  px-[30px] mx-[80px] flex justify-between rounded-[40px] text-blue-600 items-center max-md:hidden">
+
+    <a href="Index.html"><img class="w-[50px]" src="Img/IMG_E1016.JPG" alt=""></a>
+
+    <ul class="flex gap-6">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+
+    <button class="p-2 bg-blue-600 text-white rounded-lg">Login <i class="fa fa-user"></i></button>
+
+  </nav>
+
+
+  <!-- NAVBAR FOR MOBILE -->
+  <nav class="flex justify-between rounded-[40px] text-blue-600 items-center bg-white py-[12px] px-[30px] mx-[30px] md:hidden">
+
+    <a href="Index.html"><img class="w-[50px]" src="Img/IMG_E1016.JPG" alt=""></a>
+    <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl"></i></button>
+
+  </nav>
+
+
+  <!-- SIDEBAR FOR MOBILE -->
+  <div id="menu" class="fixed top-0 right-0 h-[100vh] w-full p-4 transform translate-x-full transition-transform duration-300 md:hidden z-50 bg-blue-600 text-white">
+    <button onclick="toggleMenu()" class="absolute top-4 right-4 text-3xl font-semibold">&times;</button>
+    <ul class="flex flex-col gap-4 mt-10">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Service.html">Serices</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+
+  <!-- HERO SECTION -->
+  <main class="text-center text-white mt-16 pb-16">
+
+    <h1 class="font-bold text-5xl">FAQs</h1>
+    <p class="text-xl">Got Questions? We've got Answers!</p>
+
+   </main>
+
+</header>  
+
+
+
+   <!-- GENERAL QUESTION -->
+    <section class="md:px-[110px] py-16 max-md:px-4">
+
+      <div class="grid grid-cols-2 gap-8 max-md:grid-cols-1">
+
+        <div class="flex gap-4">
+          <img class="md:w-[350px] h-[450px] rounded-lg max-md:w-full" src="Img/FAQs.jpeg" alt="">
+          <div class="flex flex-col gap-6 mt-[30px] max-md:hidden">
+            <img class="h-[200px] rounded-lg" src="Img/IMG_1027.JPG" alt="">
+            <img class="h-[200px] rounded-lg" src="Img/IMG_1028.JPG" alt="">
+          </div>
+        </div>
+
+
+        <div class="container mx-auto px-4  max-w-4xl">
+          <h1 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
+      
+          <!-- FAQ Item 1 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">What is BillSwift?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              BillSwift is a digital payment platform offering fast, secure, and reliable services for airtime top-ups, data purchases, and utility bill payments.
+            </div>
+          </div>
+      
+          <!-- FAQ Item 2 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">Is BillSwift secure?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              Yes, BillSwift uses advanced encryption and secure payment gateways to protect your personal information and ensure safe transactions.
+            </div>
+          </div>
+      
+          <!-- FAQ Item 3 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">How do I create an account?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              Creating an account is simple. Click "Sign Up" on our homepage, fill out the required details, and verify your email address.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">How does BillSwift work?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              Simply sign up for a free account, select the service you need, complete your payment, and your transaction will be processed instantly.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">Can I update my account details?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              Yes, you can update your profile information anytime by logging into your account and navigating to the Profile Settings section.
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button class="w-full flex justify-between items-center px-4 py-3 bg-gray-100 text-left hover:bg-gray-200">
+              <span class="font-medium">What services can I access on BillSwift?</span>
+              <span class="fas fa-chevron-down transition-transform transform"></span>
+            </button>
+            <div class="hidden px-4 py-3 bg-white">
+              <li>Buy airtime and data.</li>
+              <li>Pay electricity and cable TV bills.</li>
+              <li>Use our wallet system for quick payments.</li>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section class="text-blue-600 py-16 text-center max-md:px-4">
+
+      <h1 class="text-xl font-bold">Can't find what you're looking for? Reach out to us—we're here to help!</h1>
+      <button class="p-2 bg-blue-600 text-white rounded-lg mt-2">Contact Us <i class="fa fa-arrow-right"></i></button>
+
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 md:px-[110px] py-16 rounded-t-[50px] max-md:pr-4 pl-12">
+
+      <div class="flex justify-between gap-12 max-md:flex-col">
+
+        <div class="text-white text-lg max-w-[400px]">
+          <p>BillSwift is your go-to platform for fast, secure, and affordable digital transactions. From airtime top-ups to bill payments, we're here to simplify your financial life.</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Quick Links</h1>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Customer Support</h1>
+          <p><i class="fa fa-envelope"></i> support@billswift.com</p>
+          <p><i class="fa fa-phone-alt"></i> +234 814 442 6428</p>
+          <p><i class="fa fa-home"></i> NO. 5 Tetlow, Owerri.</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-white">
+          <h1 class="font-semibold text-xl">Stay connected with us</h1>
+          <ul class="flex gap-2">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-whatsapp"></i>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="text-center mt-16 text-white  border-yl">
+        <h1> &copy; 2024, BillSwift. All rights reserved.</h1>
+      </div>
+
+    </footer>
+  
+
+   <script src="FAQs.js"></script>
+</body>
+</html>

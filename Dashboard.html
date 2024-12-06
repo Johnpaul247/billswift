@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>DASHBOARD</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header class="shadow-lg py-4 px-[50px]">
+
+    <div class="flex justify-between items-center">
+
+      <div class="flex gap-2 align-center items-center">
+        <img class="w-[50px]" src="Img/IMG_E1016.JPG" alt="">
+        <h1 class="font-semibold text-xl">Hi Jaypee</h1>
+      </div>
+
+      <div class="flex gap-2 max-md:hidden">
+        <a href="Index.html"><img class="w-[50px]" src="Img/IMG_E1016.JPG" alt=""></a>
+      </div>
+
+      <div class="flex gap-2">
+        <i class="fa fa-headset text-xl"></i>
+        <i class="fa fa-bell text-xl"></i>
+        <i class="fa fa-user text-xl"></i>
+      </div>
+
+    </div>
+
+   </header>
+
+
+   <!-- BODY -->
+  <section class="flex justify-between gap-6">
+
+    <!-- SIDEBAR -->
+     <aside class="flex flex-col gap-2 shadow w-64 px-4 py-8 max-md:hidden">
+
+      <ul class="flex flex-col gap-8">
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg ">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-home text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Dashboard</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fas fa-arrow-up text-white text-2xl font-bold"></i></h1>
+          <a class="font-semibold" href="">Fund Wallet</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-phone-alt text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Airtime Top up</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-wifi text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Data Bundles</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-credit-card text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Utility Payments</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-cog text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Settings</a>
+        </li>
+
+        <li class="flex gap-4 align-center items-center hover:bg-gray-200 hover:p-2 hover:rounded-lg">
+          <h1 class="bg-blue-600 px-3 py-2 rounded-xl"><i class="fa fa-right-from-bracket text-white text-xl"></i></h1>
+          <a class="font-semibold" href="">Logout</a>
+        </li>
+
+      </ul>
+
+     </aside>
+
+
+     <!-- MAIN SECTION -->
+      <main class="p-6 w-full">
+
+        <!-- QUICK LINK -->
+        <div class="bg-blue-600 rounded-lg py-6 px-4 flex justify-between text-white">
+
+          <div class="flex flex-col gap-2">
+            <h3>Available balance</h3>
+            <p>N100.00 <i class="fa fa-eye"></i></p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h3>Transaction History <i class="fa fa-greater-than"></i></h3>
+            <button class="p-2 bg-white text-blue-600 rounded-full font-semibold">Fund Wallet <i class="fa fa-arrow-up"></i></button>
+          </div>
+
+        </div>
+
+
+        <!-- SERVICES -->
+         <section class="py-6 px-4 mt-8">
+
+          <div class="flex justify-between">
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-phone-alt text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Airtime</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-6 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-wifi text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Data</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-tv text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Cable TV</a>
+            </li>
+
+          </div>
+
+          <div class="flex justify-between mt-6">
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-lightbulb text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Airtime</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-6 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-wifi text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Data</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-lightbulb text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Cable TV</a>
+            </li>
+
+          </div>
+
+          <div class="flex justify-between mt-6">
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-phone-alt text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Airtime</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-6 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-wifi text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Data</a>
+            </li>
+
+            <li class="flex flex-col gap-2 shadow-lg px-3 py-2 rounded-xl text-center">
+              <h1 class=""><i class="fa fa-tv text-blue-600 text-xl"></i></h1>
+              <a class="font-semibold" href="">Cable TV</a>
+            </li>
+
+          </div>
+
+         </section>
+
+
+         <!-- ACTIVITY SECTION -->
+          <section class="py-6 px-4 mt-8 md:hidden">
+
+            <div class="flex justify-between">
+              <h1>Recenct Activity</h1>
+              <p class="text-blue-600">See all</p>
+            </div>
+
+            <h1 class="text-center"> <i class="fa fa-trash text-5xl text-blue-600"></i></h1>
+
+            <p class="text-center mt-6">Your recent activities will appear here. Get started by making a transaction.</p>
+
+          </section>
+
+
+          <!-- FOOTER -->
+           <section class="pt-6 px-4 mt-6 md:hidden">
+
+            <div class="flex justify-between">
+
+              <h1 class="bg-blue-600 px-3 py-2 rounded-xl w-fit"><i class="fa fa-home text-white text-xl"></i></h1>
+
+              <h1 class="bg-blue-600 px-3 py-2 rounded-xl w-fit"><i class="fa fa-credit-card text-white text-xl"></i></h1>
+
+              <h1 class="bg-blue-600 px-3 py-2 rounded-xl w-fit"><i class="fa fa-cog text-white text-xl"></i></h1>
+
+              <h1 class="bg-blue-600 px-3 py-2 rounded-xl w-fit"><i class="fa fa-right-from-bracket text-white text-xl"></i></h1>
+
+            </div>
+
+           </section>
+
+      </main>
+
+  </section>
+</body>
+</html>
