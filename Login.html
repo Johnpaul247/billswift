@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Login - BillSwift</title>
+</head>
+<body class="bg-blue-600">
+
+  <!-- CONTAINER -->
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
+
+      <!-- HEADING -->
+       <div class="flex flex-col justify-center">
+      <h1 class="text-2xl font-bold text-blue-600 text-center mb-6">Welcome Back to BillSwift!</h1>
+      <p class="text-center text-gray-500 mb-8">Log in to access your account and start managing your bills.</p>
+       </div>
+
+      <!-- LOGIN FORM -->
+      <form id="login-form" class="space-y-6">
+
+        <!-- EMAIL -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+          <small class="text-red-500 hidden" id="email-error">Please enter a valid email address.</small>
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+          <small class="text-red-500 hidden" id="password-error">Password is required.</small>
+        </div>
+
+        <!-- REMEMBER ME -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input type="checkbox" id="remember" name="remember"
+              class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+            <label for="remember" class="ml-2 text-sm text-gray-600">
+              Remember me
+            </label>
+          </div>
+          <a href="" class="text-sm text-blue-600 hover:underline">Forgot Password?</a>
+        </div>
+
+        <!-- LOGIN BUTTON -->
+        <div>
+          <button type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring focus:ring-blue-300">
+            Log In
+          </button>
+        </div>
+      </form>
+
+      <!-- FOOTER LINKS -->
+      <p class="text-center text-gray-500 mt-6">
+        Don't have an account? <a href="signup.html" class="text-blue-600 hover:underline">Sign up here</a>.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Validation -->
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Clear previous errors
+      document.querySelectorAll("small").forEach(error => error.classList.add("hidden"));
+
+      let isValid = true;
+
+      // Email validation
+      const email = document.getElementById("email").value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById("email-error").classList.remove("hidden");
+        isValid = false;
+      }
+
+      // Password validation
+      const password = document.getElementById("password").value.trim();
+      if (!password) {
+        document.getElementById("password-error").classList.remove("hidden");
+        isValid = false;
+      }
+
+      if (isValid) {
+        alert("Login successful!");
+        // Proceed with login or further processing
+      }
+    });
+  </script>
+
+</body>
+</html>
